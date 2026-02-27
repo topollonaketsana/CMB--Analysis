@@ -82,10 +82,10 @@ Nside = 1024
 cmb_map = hp.alm2map(alm, nside= Nside)          #  lmax= lmax
 
 plt.figure()
-hp.mollview(cmb_map,
-           min= -300*1e-6, max= 300*1e-6,
-           cmap= 'jet'    
-           )
+hp.mollview(cmb_map)
+#           min= -300*1e-6, max= 300*1e-6,
+#           cmap= 'jet'    
+#           )
 #plt.savefig('artificial_map')
 #hp.gradicule()
 plt.show()
